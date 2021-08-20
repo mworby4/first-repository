@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <form id="searchCity">
+            <input
+              id="searchBar"
+              type="text"
+              class="rounded-pill"
+              placeholder="Search a city..."
+            />
+            <input id="button" value="Search" type="submit" />
+          </form>
+        </div>
+        <h1>
+          <span class="currently">Currently</span> in
+          <strong> <span class="cityName">City Name</span></strong>
+        </h1>
+        <div class="current">
+          🌧/
+          <span class="temperature" id="rightNow">##</span>°C
+        </div>
+        <br />
+        <div class="details row">
+          <div class="col">Wind: 25km/hr<br />Feels Like: 10°C</div>
+          <div class="col">Precipitation: 100%<br />Humidity: 60%</div>
+        </div>
+        <br />
+        <h2>Next 5 Days:</h2>
+        <br />
+        <div class="future row">
+          <div class="col border-end border-warning border-3">
+            Sunday <br />
+            <div class="temperature">☀<br />23°C</div>
+          </div>
+          <div class="col border-end border-warning border-3">
+            Monday<br />
+            <div class="temperature">☁<br />20°C</div>
+          </div>
+          <div class="col border-end border-warning border-3">
+            Tuesday<br />
+            <div class="temperature">⛅<br />21°C</div>
+          </div>
+          <div class="col border-end border-warning border-3">
+            Wednesday<br />
+            <div class="temperature">❄<br />-5°C</div>
+          </div>
+          <div class="col">
+            Thursday<br />
+            <div class="temperature">🌫<br />10°C</div>
+          </div>
+        </div>
+      </div>
+      <script src="src/index.js"></script>
+    </div>
+  </body>
+</html>

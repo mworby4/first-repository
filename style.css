@@ -1,0 +1,50 @@
+h1,
+h2 {
+  color: #5a6275;
+  text-align: left;
+}
+#button {
+  background-color: #ffc107;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0px 2px 5px #5a6275;
+  color: white;
+  font-size: 25px;
+  padding: 10px 10px;
+}
+.card {
+  box-shadow: 0px 3px 10px #5a6275;
+  display: block;
+  font-family: "Nunito", sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0 auto;
+  padding: 10px 30px 30px;
+  text-align: center;
+  width: 60%;
+}
+.current,
+.temperature {
+  color: #ff3366;
+}
+.current {
+  font-size: 120px;
+}
+.details {
+  color: #ffc107;
+  font-size: 28px;
+  font-weight: 500;
+}
+.future {
+  color: #5a6275;
+  font-size: 30px;
+}
+.rounded-pill {
+  border: none;
+  box-shadow: 0px 2px 5px #5a6275;
+  font-size: 25px;
+  padding: 10px 10px;
+  width: 85%;
+}
+.temperature {
+  font-weight: bold;
+}
